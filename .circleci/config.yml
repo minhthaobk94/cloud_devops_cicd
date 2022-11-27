@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: [frontend-deps-2]
+          keys: [frontend-deps-3]
       - run:
           name: Build front-end
           command: |
@@ -16,14 +16,14 @@ jobs:
             npm run build
       - save_cache:
           paths: [frontend/node_modules]
-          key: frontend-deps-2
+          key: frontend-deps-3
   build-backend:
     docker:
       - image: cimg/node:13.8.0
     steps:
       - checkout
       - restore_cache:
-          keys: [backend-deps-2]
+          keys: [backend-deps-3]
       - run:
           name: Back-end build
           command: |
@@ -32,14 +32,14 @@ jobs:
             npm run build
       - save_cache:
           paths: [backend/node_modules]
-          key: backend-deps-2
+          key: backend-deps-3
   test-frontend:
     docker:
       - image: cimg/node:13.8.0
     steps:
       - checkout
       - restore_cache:
-          keys: [frontend-deps-2]
+          keys: [frontend-deps-3]
       - run:
           name: Front-end Unit Test
           command: |
@@ -52,7 +52,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: [backend-deps-2]
+          keys: [backend-deps-3]
       - run:
           name: Back-end Unit Test
           command: |
@@ -65,7 +65,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: [frontend-deps-2]
+          keys: [frontend-deps-3]
       - run:
           name: Front-end Scan
           command: |
@@ -79,7 +79,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: [backend-deps-2]
+          keys: [backend-deps-3]
       - run:
           name: Back-end Scan
           command: |
