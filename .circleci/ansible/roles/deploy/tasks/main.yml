@@ -4,16 +4,16 @@
     path: ~/backend-app
     state: directory
 
-- name: Copy files
-  become: true
-  copy:
-    src: /root/project/artifact.tar.gz
-    dest: ~/backend-app/artifact.tar.gz
-
-# - name: "backend file copy"
+# - name: Copy files
+#   become: true
 #   copy:
-#     src: artifact.tar.gz
-#     dest: ~/backend-app
+#     src: /root/project/artifact.tar.gz
+#     dest: ~/backend-app/artifact.tar.gz
+
+- name: "backend file copy"
+  copy:
+    src: artifact.tar.gz
+    dest: ~/backend-app
 
 - name: "Unarchive backend files"
   unarchive:
