@@ -5,10 +5,15 @@
     state: directory
 
 - name: Copy files
-    become: true
-    copy:
-      src: /root/project/artifact.tar.gz
-      dest: ~/backend-app/artifact.tar.gz
+  become: true
+  copy:
+    src: /root/project/artifact.tar.gz
+    dest: ~/backend-app/artifact.tar.gz
+
+# - name: "backend file copy"
+#   copy:
+#     src: artifact.tar.gz
+#     dest: ~/backend-app
 
 - name: "Unarchive backend files"
   unarchive:
