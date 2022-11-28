@@ -2,7 +2,7 @@ A public git repository with your project code.
     [URL01] [https://github.com/minhthaobk94/cloud_devops_cicd]
 
 Evidence of deployed and functioning front-end application in an S3 bucket 
-    [URL02] 
+    [URL02] http://udapeople-37577c3.s3-website-us-east-1.amazonaws.com
 and in CloudFront. 
     [URL03]
 
