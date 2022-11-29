@@ -2,7 +2,7 @@ A public git repository with your project code.
     [URL01] [https://github.com/minhthaobk94/cloud_devops_cicd]
 
 Evidence of deployed and functioning front-end application in an S3 bucket 
-    [URL02] [http://udapeople-600a282.s3-website-us-east-1.amazonaws.com]
+    [URL02] [http://udapeople-ae815be.s3-website-us-east-1.amazonaws.com/]
 and in CloudFront. 
     [URL03] [d1yes4xcce9dyt.cloudfront.net]
 
@@ -11,4 +11,4 @@ Evidence of healthy back-end application.
         {"status":"ok","environment":"production"}
 
 Evidence of Prometheus Server. 
-    [URL05] [http://ec2-35-174-106-176.compute-1.amazonaws.com:9090/graph]
+    [URL05] [http://ec2-44-201-109-75.compute-1.amazonaws.com:9090/alerts]
